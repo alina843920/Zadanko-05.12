@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Spinner {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  animation: 3s spinning infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
